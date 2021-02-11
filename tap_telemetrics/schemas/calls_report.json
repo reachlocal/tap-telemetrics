@@ -1,0 +1,227 @@
+{
+    "type": [
+        "object"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "id": {
+            "type": "integer"
+        },
+        "call_type_id": {
+            "type": "integer"
+        },
+        "call_type": {
+            "type": "string"
+        },
+        "number_id": {
+            "type": "integer"
+        },
+        "group_id": {
+            "type": "integer"
+        },
+        "group_owner_id": {
+            "type": "integer"
+        },
+        "caller_identity": {
+            "type": "integer"
+        },
+        "organization_id": {
+            "type": "integer"
+        },
+        "answer_status_id": {
+            "type": "integer"
+        },
+        "answer_status": {
+            "type": "string"
+        },
+        "ring_duration": {
+            "type": "integer"
+        },
+        "call_duration": {
+            "type": "integer"
+        },
+        "registered_DNC": {
+            "type": "string",
+            "format": "BOOLEAN"
+        },
+        "tracking_number": {
+            "type": "string"
+        },
+        "caller_number": {
+            "type": "string"
+        },
+        "termination_number": {
+            "type": "string"
+        },
+        "caller_details_caller_type": {
+            "type": "string"
+        },
+        "caller_details_name": {
+            "type": "string"
+        },
+        "caller_details_address": {
+            "type": "string"
+        },
+        "caller_details_city": {
+            "type": "string"
+        },
+        "caller_details_state": {
+            "type": "string"
+        },
+        "caller_details_zip_code": {
+            "type": "string"
+        },
+        "caller_details_country": {
+            "type": "string"
+        },
+        "caller_details_latitude": {
+            "type": "number"
+        },
+        "caller_details_longitude": {
+            "type": "number"
+        },
+        "conversation_analytics_call_record_file": {
+            "type": "string"
+        },
+        "conversation_analytics_pci_redaction": {
+            "type": "string",
+            "format": "BOOLEAN"
+        },
+        "conversation_analytics_voice_link": {
+            "type": "string"
+        },
+        "google_analytics_tracking_id": {
+            "type": "string"
+        },
+        "google_analytics_client_id": {
+            "type": "string"
+        },
+        "google_analytics_referrer": {
+            "type": "string"
+        },
+        "google_analytics_location": {
+            "type": "string"
+        },
+        "google_analytics_screen_resolution": {
+            "type": "string"
+        },
+        "google_analytics_screen_colors": {
+            "type": "string"
+        },
+        "google_analytics_viewport_size": {
+            "type": "string"
+        },
+        "google_analytics_encoding": {
+            "type": "string"
+        },
+        "google_analytics_java_enabled": {
+            "type": "string"
+        },
+        "google_analytics_language": {
+            "type": "string"
+        },
+        "lead_status": {
+            "type": "string",
+            "format": "BOOLEAN"
+        },
+        "voicemail_status": {
+            "type": "string",
+            "format": "BOOLEAN"
+        },
+        "current_customer_status": {
+            "type": "string",
+            "format": "BOOLEAN"
+        },
+        "employment_inquiry_status": {
+            "type": "string",
+            "format": "BOOLEAN"
+        },
+        "attribution_details_rule_description": {
+            "type": "string"
+        },
+        "attribution_details_session_id": {
+            "type": "integer"
+        },
+        "attribution_details_session_identifier": {
+            "type": "string"
+        },
+        "attribution_details_utm_campaign": {
+            "type": "string"
+        },
+        "attribution_details_utm_term": {
+            "type": "string"
+        },
+        "attribution_details_utm_source": {
+            "type": "string"
+        },
+        "attribution_details_utm_medium": {
+            "type": "string"
+        },
+        "attribution_details_utm_content": {
+            "type": "string"
+        },
+        "attribution_details_landing_page_url": {
+            "type": "string"
+        },
+        "attribution_details_referrer_url": {
+            "type": "string"
+        },
+        "attribution_details_multisession_flag": {
+            "type": "string"
+        },
+        "event_event_type": {
+            "type": "string"
+        },
+        "event_session_id": {
+            "type": "string"
+        },
+        "event_page_url": {
+            "type": "string"
+        },
+        "event_data_salutation": {
+            "type": "string"
+        },
+        "event_data_name": {
+            "type": "string"
+        },
+        "event_data_email": {
+            "type": "string"
+        },
+        "event_data_message": {
+            "type": "string"
+        },
+        "event_timestamp": {
+            "type": "string"
+        },
+        "routing_keypress": {
+            "type": "string"
+        },
+        "start_time": {
+            "type": "string",
+            "format": "TIMESTAMP"
+        },
+        "answer_time": {
+            "type": "string",
+            "format": "TIMESTAMP"
+        },
+        "end_time": {
+            "type": "string",
+            "format": "TIMESTAMP"
+        },
+        "start_time_utc": {
+            "type": "string",
+            "format": "TIMESTAMP"
+        },
+        "answer_time_utc": {
+            "type": "string",
+            "format": "TIMESTAMP"
+        },
+        "end_time_utc": {
+            "type": "string",
+            "format": "TIMESTAMP"
+        },
+        "status": {
+            "type": "string"
+        }
+    }
+}

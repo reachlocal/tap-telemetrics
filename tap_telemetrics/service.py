@@ -47,10 +47,14 @@ class TelemetricsReportingService:
             executor.map(lambda index: self.retrieve_page(index, total_pages, params, headers), list(range(2, total_pages + 1)))
 
     def retrieve_page(self, index, total_pages, params, headers):
-        LOGGER.info(f'Retrieving data for page {index} of {total_pages}')
-        params['pagenumber'] = index
-        resp = requests.get(self.api_url, params, headers=headers).json()
-        self.process_data(resp, index)
+        try:
+            LOGGER.info(f'Retrieving data for page {index} of {total_pages}')
+            params['pagenumber'] = index
+            resp = requests.get(self.api_url, params, headers=headers).json()
+            self.process_data(resp, index)
+        except Exception as ex:
+            LOGGER.error(f'Error while retrieving data for page {index} of {total_pages}')
+            LOGGER.error(ex)
 
     def process_data(self, data, index):
         prop_list = list(map(lambda x: x[0], self.props.items()))
